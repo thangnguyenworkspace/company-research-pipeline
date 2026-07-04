@@ -1,0 +1,34 @@
+{
+  "manifestVersion": "1.0",
+  "name": "company-research-pipeline",
+  "description": "Repeatable company-research pipeline for Claude Code with Exa and Apify: seven cited, confidence-tagged dossiers per company.",
+  "maturity": "snapshot",
+  "artifactType": "mixed",
+  "version": "snapshot-2026-07-03",
+  "license": "MIT",
+  "entryPoints": {
+    "human": "README.md",
+    "agent": "AGENTS.md"
+  },
+  "boundaries": {
+    "always": [
+      "research/**"
+    ],
+    "askFirst": [
+      "playbook/**",
+      ".claude/commands/**",
+      "templates/**"
+    ],
+    "never": [
+      ".env*",
+      ".mcp.json"
+    ]
+  },
+  "provenance": {
+    "builtWith": "Claude Code",
+    "generatedFiles": [
+      "CLAUDE.md: imports AGENTS.md; do not edit directly"
+    ],
+    "snapshotDate": "2026-07-03"
+  }
+}

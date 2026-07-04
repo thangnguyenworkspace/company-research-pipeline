@@ -74,4 +74,4 @@ Every load-bearing claim carries `[X/NN%]`: **F** = fact (checked against a prim
 - **Sections are scaffolding, not conclusions.** Fix each section's purpose and dimensions before research; never pre-write the finding.
 - **The description field carries the headline findings** with confidence levels, so a reader triaging seven dossiers can rank them without opening each.
 - **Purpose lines** (`> Purpose: ...`) keep every section answerable: if you cannot state the question, the section should not exist.
-- **One analytical spine per dossier** (see `playbook/03-topics.md`): a named lens (moat analysis, jobs-to-be-done, forecast horizons) that earns its place by producing insight the plain sections would miss.
+- **One analytical spine per dossier** (see [`playbook/03-topics.md`](../playbook/03-topics.md)): a named lens (moat analysis, jobs-to-be-done, forecast horizons) that earns its place by producing insight the plain sections would miss.

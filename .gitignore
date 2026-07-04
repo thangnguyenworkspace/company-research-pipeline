@@ -1,1 +1,8 @@
+# OS cruft
 .DS_Store
+
+# Local MCP config and secrets, if you add them
+.mcp.json
+.env*
+
+# Sensitive engagements: add your own research/{slug}/ lines here before committing

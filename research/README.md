@@ -1,6 +1,6 @@
 # research/
 
-Working folders land here, one per company, created by `/research-company`. The layout each engagement gets:
+Working folders land here, one per company, created by [`/research-company`](../.claude/commands/research-company.md). Nothing in this folder ships with the repository; it is the write surface for your own engagements, and everything the pipeline produces (recon notes, gather reports, verification batches, the seven dossiers, the synthesis) stays inside the company's folder. The layout each engagement gets:
 
 ```
 research/{company-slug}/
@@ -24,4 +24,4 @@ research/{company-slug}/
         └── archive/            absorbed findings (the move is the audit trail)
 ```
 
-Raw evidence files are immutable once written: correction happens in dossiers and verification reports, never by editing evidence. If a company's research is sensitive, add `research/{company-slug}/` to `.gitignore` before committing.
+Two rules govern this folder. Raw evidence files are immutable once written: when a claim turns out to be wrong, the correction lands in a dossier or a verification report, never by editing the evidence file, so the trail of what was actually retrieved stays intact. And if a company's research is sensitive, add `research/{company-slug}/` to [`.gitignore`](../.gitignore) before committing; the pipeline works identically whether the engagement is committed or kept local.

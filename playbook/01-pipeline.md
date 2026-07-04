@@ -16,18 +16,18 @@ Before any search, write down in a few sentences:
 
 One session. Goal: map the surface, not answer questions.
 
-1. Run broad Exa searches across the company's name, products, founders, funding, and press. Use `web_search_advanced_exa` with natural-language queries (see `playbook/04-tools.md`).
+1. Run broad Exa searches across the company's name, products, founders, funding, and press. Use `web_search_advanced_exa` with natural-language queries (see [`playbook/04-tools.md`](04-tools.md)).
 2. Crawl the obvious primary surfaces: the company site, the docs site, the blog, the careers page, Crunchbase or equivalent, the GitHub org if one exists.
 3. Watch for **name collisions** early. Many company names are shared by unrelated entities (other companies, places, open-source projects). Record the collisions in the coverage map so every later search can exclude them.
 4. Produce two artifacts in the company's working folder:
    - `00-recon.md`: what the company appears to be, its products, people, funding, and the obvious open questions. Everything here is provisional and labeled as such.
-   - `00-coverage-map.md`: the living ledger of what is solid, what needs verification, and what is missing, organized by topic (template in `templates/coverage-map.md`).
+   - `00-coverage-map.md`: the living ledger of what is solid, what needs verification, and what is missing, organized by topic (template in [`templates/coverage-map.md`](../templates/coverage-map.md)).
 
 Recon findings are a starting baseline, never the truth. The whole point of the later phases is that the first pass is always partly wrong.
 
 ### Phase 2: Topic dossiers
 
-The core of the engagement. Seven topics, built **one per session**, in a deliberate order (see `playbook/03-topics.md` for the topics and the rationale):
+The core of the engagement. Seven topics, built **one per session**, in a deliberate order (see [`playbook/03-topics.md`](03-topics.md) for the topics and the rationale):
 
 thesis, then company, then product, then buyers, then competitive, then activity, then people.
 
@@ -57,11 +57,11 @@ Fan out 2 to 4 parallel research agents, each owning a disjoint slice of the top
 
 - **Reason**: name the biggest open gap in your slice.
 - **Search**: at most 2 Exa searches plus 1 batched crawl aimed at that gap.
-- **Reflect**: record what closed, grade every source on the two-axis system (`playbook/02-epistemics.md`), and test the stop rule.
+- **Reflect**: record what closed, grade every source on the two-axis system ([`playbook/02-epistemics.md`](02-epistemics.md)), and test the stop rule.
 
 Stop when you can no longer name a specific unexplored source or angle (a named-gap test, not a quality floor: thin topics stop honestly at a low grade), when returns are diminishing, or at the 3-round cap. Round 1 is the classic one-shot search; the depth comes from rounds 2 and 3 aimed only at residual gaps.
 
-Gather agents **organize, never conclude**. Their output is sourced findings with grades (template in `templates/gather-report.md`), not analysis. Every finding carries its external source URL.
+Gather agents **organize, never conclude**. Their output is sourced findings with grades (template in [`templates/gather-report.md`](../templates/gather-report.md)), not analysis. Every finding carries its external source URL.
 
 ### Step 3: Compile
 
@@ -73,7 +73,7 @@ The step that separates this pipeline from a summary. Frame it adversarially: th
 
 Triage what gets re-checked against primary sources: claims that are load-bearing AND (single-source, old, of unknown origin, or time-sensitive). For each, fan out verification agents that go to the primary record: the regulator's own register, the package registry's JSON API, the live product docs, the official appointment roster, the company's own filings.
 
-Output per claim: a verdict (CONFIRMED / REFUTED / PARTIAL), the confidence, and the primary source (template in `templates/verification-report.md`). Two patterns worth stealing:
+Output per claim: a verdict (CONFIRMED / REFUTED / PARTIAL), the confidence, and the primary source (template in [`templates/verification-report.md`](../templates/verification-report.md)). Two patterns worth stealing:
 
 - **Verify against the running system.** A moat claim is not tested against the company's whitepaper; it is tested against what rivals actually ship today. A "we integrate with X" claim is tested by finding the integration in the live docs.
 - **Positive controls.** When verifying an absence ("the company is on no standards roster"), also confirm the method can find presence: check that known members DO appear in the roster you are reading. An absence finding without a positive control is a search failure waiting to be published.
@@ -97,9 +97,9 @@ Only the gaps the attack named. Small, targeted agent runs. Resist the urge to b
 
 You write the dossier once, in the main conversation, from the compiled gather, the verification verdicts, and the inbound queue. Rules:
 
-- Every claim carries an in-text citation and an `[F/I/A + NN%]` tag (the tag system is defined in `playbook/02-epistemics.md`). Tags are assigned by you at write time, never inherited from an agent.
+- Every claim carries an in-text citation and an `[F/I/A + NN%]` tag (the tag system is defined in [`playbook/02-epistemics.md`](02-epistemics.md)). Tags are assigned by you at write time, never inherited from an agent.
 - Conflicts are surfaced with both numbers and both sources.
-- The dossier follows the template (`templates/dossier.md`): an ownership header saying what this dossier owns and what its neighbors own, the tag legend, purpose-led sections, open questions, key terms, and a full reference list.
+- The dossier follows the template ([`templates/dossier.md`](../templates/dossier.md)): an ownership header saying what this dossier owns and what its neighbors own, the tag legend, purpose-led sections, open questions, key terms, and a full reference list.
 - Sections are scaffolding, not conclusions: the section plan fixes the questions each section answers, never the answers.
 
 ### Step 8: Distribute

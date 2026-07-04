@@ -53,7 +53,7 @@ Excluded: {the sub-questions explicitly left to sibling slices}
 
 ## Rules
 
-- Grade every source `[R·C]` per `playbook/02-epistemics.md` section 3. Sole-source figures cap at C3.
-- Natural-language Exa queries; parameters per `playbook/04-tools.md` (crawl `maxCharacters` set, `numResults` explicit, pre-score from result text before crawling).
+- Grade every source `[R·C]` per [`playbook/02-epistemics.md`](../playbook/02-epistemics.md) section 3. Sole-source figures cap at C3.
+- Natural-language Exa queries; parameters per [`playbook/04-tools.md`](../playbook/04-tools.md) (crawl `maxCharacters` set, `numResults` explicit, pre-score from result text before crawling).
 - Every finding carries an external source URL. "I recall" and "it is known" do not exist.
 - Not-found is reported as a search fact, never as evidence of absence.
